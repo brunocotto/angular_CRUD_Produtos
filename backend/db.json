@@ -19,6 +19,11 @@
       "name": "Geladeira",
       "price": "1900.99",
       "id": 4
+    },
+    {
+      "name": "testando input",
+      "price": "1.99",
+      "id": 5
     }
   ]
 }
