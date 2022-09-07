@@ -4,9 +4,16 @@
 }
 
 .sidenav a {
+    display: flex;
+    align-items: center;
     color: #fff;
 }
 
 .sidenav i {
     padding-right: 10px;
+}
+
+.content {
+    padding: 16px;
+    background-color: #fff;
 }
