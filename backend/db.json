@@ -24,6 +24,11 @@
       "name": "testando input",
       "price": "1.99",
       "id": 5
+    },
+    {
+      "name": "test",
+      "price": "8.99",
+      "id": 6
     }
   ]
 }

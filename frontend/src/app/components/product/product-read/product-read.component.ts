@@ -1,4 +1,6 @@
+import { Product } from './../product.model';
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../product.service';
 
 @Component({
   selector: 'app-product-read',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductReadComponent implements OnInit {
 
-  constructor() { }
+  //products! => "!" sintaxe existe para aqueles casos comuns em que você não pode garantir que o valor será definido imediatamente. 
+  products: Product[];
+
+  constructor(private productService: ProductService) {}
 
   ngOnInit(): void {
+    this.productService.read().subscribe(products => {
+      this.products = products
+      console.log(this.products)
+    })
   }
 
 }
