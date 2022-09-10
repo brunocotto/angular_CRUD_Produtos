@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar'
 import { Observable } from 'rxjs';
+import { UrlSegmentGroup } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -31,5 +32,16 @@ export class ProductService {
   //lendo dados do back
   read(): Observable<Product[]> {
     return this.http.get<Product[]>(this.baseURL)
+  }
+
+  readById(id: string): Observable<Product> {
+    //interpolação da rota de produtos com o ID, retornando um Observable
+    const url = `${this.baseURL}/${id}`
+    return this.http.get<Product>(url)
+  }
+
+  update(product: Product): Observable<Product> {
+    const url = `${this.baseURL}/${product.id}`
+    return this.http.put<Product>(url, product)
   }
 }
