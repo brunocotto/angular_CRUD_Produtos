@@ -31,17 +31,23 @@ export class ProductService {
 
   //lendo dados do back
   read(): Observable<Product[]> {
-    return this.http.get<Product[]>(this.baseURL)
+    return this.http.get<Product[]>(this.baseURL);
   }
 
+  //search for ID
   readById(id: string): Observable<Product> {
     //interpolação da rota de produtos com o ID, retornando um Observable
-    const url = `${this.baseURL}/${id}`
-    return this.http.get<Product>(url)
+    const url = `${this.baseURL}/${id}`;
+    return this.http.get<Product>(url);
   }
-
+  //update for ID
   update(product: Product): Observable<Product> {
-    const url = `${this.baseURL}/${product.id}`
-    return this.http.put<Product>(url, product)
+    const url = `${this.baseURL}/${product.id}`;
+    return this.http.put<Product>(url, product);
+  }
+  //delete for ID
+  delete(id: number): Observable<Product> {
+    const url = `${this.baseURL}/${id}`;
+    return this.http.delete<Product>(url);
   }
 }
