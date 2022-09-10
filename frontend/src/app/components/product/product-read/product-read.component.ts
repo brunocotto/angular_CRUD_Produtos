@@ -11,13 +11,14 @@ export class ProductReadComponent implements OnInit {
 
   //products! => "!" sintaxe existe para aqueles casos comuns em que você não pode garantir que o valor será definido imediatamente. 
   products: Product[];
+  displayedColumns = ['id', 'name', 'price', 'action']
 
   constructor(private productService: ProductService) {}
 
   ngOnInit(): void {
     this.productService.read().subscribe(products => {
       this.products = products
-      console.log(this.products)
+      console.log(products)
     })
   }
 

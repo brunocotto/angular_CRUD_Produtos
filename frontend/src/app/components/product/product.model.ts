@@ -1,6 +1,6 @@
 export interface Product {
     //id opcional
-    id?: number,
+    id: number,
     name: string,
-    price: number | null,
+    price?: number | null,
 }
