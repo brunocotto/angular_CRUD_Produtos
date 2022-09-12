@@ -1,3 +1,7 @@
+mat-toolbar {
+    background-color: #101010;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -7,7 +11,8 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #000;
+    color: #fff;
+    transition: 0.3s;
 }
 
 .header .logo {
@@ -16,9 +21,14 @@
 }
 
 .header .title-group {
-    padding-left: 25px;
+    padding-left: 40px;
+    opacity: 0.9;
 }
 
 .header .title-group i {
     padding-right: 5px;
+}
+
+.material-icons {
+    color: #6833e4;
 }

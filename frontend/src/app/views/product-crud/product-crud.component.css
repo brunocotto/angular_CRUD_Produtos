@@ -1,3 +1,16 @@
 button {
     margin-bottom: 30px;
+    color: #fff;
+    border: solid;
+    border-color: #6833e4;
+    border-width: 1px;
+    background-color: transparent;
+    border-radius: 6px;
+    transition: 0.3s;
+    cursor: pointer;
+    opacity: 0.9
+}
+
+button:hover {
+    background-color:  #6833e4;
 }

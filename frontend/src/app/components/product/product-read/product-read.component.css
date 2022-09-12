@@ -1,5 +1,13 @@
 table {
     width: 100%;
+    background: linear-gradient(270deg,#121212, #161616);
+    
+}
+
+.mat-header-cell,
+.mat-cell {
+    color: #fff;
+    opacity: 0.9;
 }
 
 .edit {
@@ -8,8 +16,17 @@ table {
 
 .edit > i {
     color: #d9cd27;
+    opacity: 0.7;
+}
+
+.edit > i:hover {
+    opacity: 1;
 }
 
 .delete > i {
     color: #e35e6b;
+    opacity: 0.7;
+}
+.delete > i:hover {
+    opacity: 1;
 }
