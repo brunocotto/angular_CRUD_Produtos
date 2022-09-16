@@ -2,9 +2,84 @@ form {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+    background-color: linear-gradient(270deg,#121212, #161616);;
 }
 
 button {
     margin-top: 20px;
     margin-right: 10px;
+}
+
+mat-card {
+    background: linear-gradient(270deg,#121212, #161616);
+}
+
+mat-card-title {
+    color: #fff;
+}
+
+form mat-form-field input {
+    color: #fff;
+    opacity: 0.8;
+}
+
+::ng-deep mat-placeholder {
+    color: #fff !important;
+    opacity: 0.8;
+}
+
+::ng-deep mat-focused mat-placeholder {
+    color: #fff !important;
+    opacity: 0.8;
+}
+
+::ng-deep .mat-form-field-underline .mat-form-field-ripple {
+    background-color:#fff !important; 
+}
+
+::ng-deep .mat-form-field-underline {
+    background-color:#fff !important;
+    opacity: 0.8;
+}
+
+form mat-form-field input:-webkit-autofill,
+	select:-webkit-autofill,
+	select:-webkit-autofill:hover,
+	select:-webkit-autofill:focus {
+	  -webkit-text-fill-color: whitesmoke !important;
+	  transition: background-color 5000s ease-in-out 0s;
+}
+
+#btn-update {
+    margin-bottom: 30px;
+    color: #fff;
+    border: solid;
+    border-color: #6833e4;
+    border-width: 1px;
+    background-color: #6833e4;
+    border-radius: 6px;
+    transition: 0.3s;
+    cursor: pointer;
+    opacity: 0.8
+}
+
+#btn-update:hover {
+    opacity: 1
+}
+
+#btn-cancel {
+    margin-bottom: 30px;
+    color: #fff;
+    border: solid;
+    border-color: #6833e4;
+    border-width: 1px;
+    background-color: transparent;
+    border-radius: 6px;
+    transition: 0.3s;
+    cursor: pointer;
+    opacity: 0.8
+}
+
+#btn-cancel:hover {
+    opacity: 1
 }

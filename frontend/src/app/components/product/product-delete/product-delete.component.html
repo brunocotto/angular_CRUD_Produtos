@@ -3,17 +3,19 @@
     <form>
         <mat-form-field>
             <!--[(ngModel)]="product.name"-->
-            <input matInput placeholder="Nome" [(ngModel)]="product.name" name="name" disabled>
+            <input matInput [(ngModel)]="product.name" name="name" disabled>
+            <mat-placeholder class="Nome">Nome</mat-placeholder>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Preço (R$)" [(ngModel)]="product.price" name="price" disabled>
+            <input matInput [(ngModel)]="product.price" name="price" disabled>
+            <mat-placeholder class="Preço (R$)">Preço</mat-placeholder>
         </mat-form-field>
     </form>
-    <button mat-raised-button (click)="deleteProduct()" color="warn">
+    <button id="btn-delete" mat-raised-button (click)="deleteProduct()" color="warn">
         Deletar
     </button>
     
-    <button mat-raised-button (click)="cancel()">
+    <button id="btn-cancel" mat-raised-button (click)="cancel()">
         Cancelar
     </button>
 </mat-card>

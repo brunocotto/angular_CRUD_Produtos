@@ -7,14 +7,15 @@
             <mat-placeholder class="placeholder">Nome</mat-placeholder>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Preço (R$)"  [(ngModel)]="product.price" name="price" type="number">
+            <input matInput [(ngModel)]="product.price" name="price" type="number">
+            <mat-placeholder class="Preço (R$)">Preço</mat-placeholder>
         </mat-form-field>
     </form>
-    <button mat-raised-button (click)="createProduct()">
+    <button id="btn-save" mat-raised-button (click)="createProduct()">
         Salvar
     </button>
     
-    <button mat-raised-button (click)="cancel()">
+    <button id="btn-cancel" mat-raised-button (click)="cancel()">
         Cancelar
     </button>
 </mat-card>
